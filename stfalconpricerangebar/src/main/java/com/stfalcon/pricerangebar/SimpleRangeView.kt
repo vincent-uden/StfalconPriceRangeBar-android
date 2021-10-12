@@ -411,7 +411,7 @@ open class SimpleRangeView @JvmOverloads constructor(
      */
     protected fun drawLines(canvas: Canvas) {
         val xActiveStart = getPositionX(start)
-        val xActiveEnd = getPositionX(end) - xActiveStart
+        val xActiveEnd = getPositionX(count - 1) - xActiveStart
         val xFixedStart = getPositionX(startFixed)
         val xFixedEnd = getPositionX(endFixed) - xFixedStart
 
