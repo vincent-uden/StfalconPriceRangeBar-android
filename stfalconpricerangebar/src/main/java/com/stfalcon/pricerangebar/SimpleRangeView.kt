@@ -412,7 +412,7 @@ open class SimpleRangeView @JvmOverloads constructor(
     protected fun drawLines(canvas: Canvas) {
         stepPx = (width - (innerRangePaddingLeft + innerRangePaddingRight)) / (count - 1)
         val xActiveStart = getPositionX(start)
-        val xActiveEnd = getPositionX(count - 1) - xActiveStart
+        val xActiveEnd = getPositionX(end) - xActiveStart
         val xFixedStart = getPositionX(startFixed)
         val xFixedEnd = getPositionX(endFixed) - xFixedStart
 
